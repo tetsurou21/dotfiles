@@ -60,8 +60,8 @@ case "$TERM" in
     ;;
 esac
 
-# python
-source ~/.pythonbrew/etc/bashrc
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # phpbrew
 source ~/.phpbrew/bashrc
