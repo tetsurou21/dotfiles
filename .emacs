@@ -60,7 +60,7 @@
 	  c-basic-offset 2))))
 	      
 ;; python-mode
-(setq python-indent 2)
+(setq python-indent-offset 2)
 
 ;; uniquify
 (require 'uniquify)
