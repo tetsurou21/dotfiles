@@ -61,14 +61,20 @@ case "$TERM" in
 esac
 
 # pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then 
+  eval "$(pyenv init -)"
+fi
 
 # phpbrew
-source ~/.phpbrew/bashrc
+if [ -f "$HOME/.phpbrew/bashrc" ]; then
+  source "$HOME/.phpbrew/bashrc"
+fi
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
 
 # cabal
 export PATH="$HOME/.cabal/bin:$PATH"
