@@ -11,8 +11,7 @@ PAGER=lv
 # prompt
 PS1="[\u@\h \W]\\$ "
 
-PATH=/opt/local/bin:$PATH
-export EDITOR PAGER PS1 PATH
+export EDITOR PAGER PS1
 
 MANPATH=/usr/share/man:/usr/local/share/man:/usr/X11/man
 export MANPATH
@@ -23,8 +22,6 @@ export LSCOLORS=gxdxxcxdcxegedabagacad
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 
-# encodings
-# export LC_CTYPE=ja_JP.UTF8
 ##################################################
 ### aliases
 ###
@@ -59,30 +56,3 @@ case "$TERM" in
     PS1='\[\033k\033\\\]'$PS1
     ;;
 esac
-
-# pyenv
-if which pyenv > /dev/null; then 
-  eval "$(pyenv init -)"
-fi
-
-# phpbrew
-if [ -f "$HOME/.phpbrew/bashrc" ]; then
-  source "$HOME/.phpbrew/bashrc"
-fi
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
-# cabal
-export PATH="$HOME/.cabal/bin:$PATH"
-
-# plenv
-eval "$(plenv init -)"
-
-# completion 
-if [ -e "$HOME/.bash_completion.d" ]; then
-  . "$HOME"/.bash_completion.d/*.bash
-fi
