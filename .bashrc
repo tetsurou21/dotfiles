@@ -6,7 +6,7 @@
 
 # editor pager
 EDITOR=vi
-PAGER=lv
+PAGER='lv -c'
 
 # prompt
 PS1="[\u@\h \W]\\$ "
