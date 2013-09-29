@@ -50,6 +50,11 @@ export GOOS=darwin
 export GOARCH=amd64
 export GOBIN=$HOME/bin
 
+# phpbrew
+if [ -f "$HOME/.phpbrew/bashrc" ]; then
+  source "$HOME/.phpbrew/bashrc"
+fi
+
 # screen
 case "$TERM" in
   screen)

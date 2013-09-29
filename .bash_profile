@@ -7,11 +7,6 @@ if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
 fi
 
-# phpbrew
-if [ -f "$HOME/.phpbrew/bashrc" ]; then
-  source "$HOME/.phpbrew/bashrc"
-fi
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then
