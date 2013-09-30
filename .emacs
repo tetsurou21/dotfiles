@@ -100,12 +100,11 @@
 
 ;; haskell-mode
 (require 'haskell-mode)
+
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 
+
 ;; ghc-mod
-(add-to-list 'load-path "~/.cabal/share/ghc-mod-1.12.4/")
-(add-to-list 'exec-path "~/.cabal/bin")
-(require 'ghc)
 (autoload 'ghc-init "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () 
 			       (ghc-init)
