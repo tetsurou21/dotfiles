@@ -35,6 +35,10 @@ set hlsearch
 " ヘルプ
 set helplang=ja
 
+" 補完
+set wildmenu
+set wildmode=full
+
 " global
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
