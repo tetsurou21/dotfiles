@@ -1,8 +1,8 @@
 ;; Window Size & Colors
 (if window-system (progn
                     (setq initial-frame-alist '((width . 80) (height . 30)))
-                    (set-background-color "gray0")
-                    (set-foreground-color "white")
+                    (set-background-color "white")
+                    (set-foreground-color "black")
                     (set-cursor-color "Gray")
 ))
 
