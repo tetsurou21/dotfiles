@@ -39,6 +39,11 @@ set helplang=ja
 set wildmenu
 set wildmode=full
 
+" 履歴
+set history=200
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 " global
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
