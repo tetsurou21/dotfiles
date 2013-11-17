@@ -36,8 +36,7 @@ set hlsearch
 set helplang=ja
 
 " 補完
-set wildmenu
-set wildmode=full
+set wildmode=longest,list
 
 " 履歴
 set history=200
