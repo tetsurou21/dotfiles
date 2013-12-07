@@ -43,6 +43,19 @@ set history=200
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
+" バッファ
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+" 引数リスト
+nnoremap <silent> [a :prev<CR>
+nnoremap <silent> ]a :next<CR>
+
+" アクティブなファイルが含まれるディレクトリ
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " global
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
