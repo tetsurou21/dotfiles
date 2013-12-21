@@ -56,6 +56,9 @@ nnoremap <silent> ]a :next<CR>
 " アクティブなファイルが含まれるディレクトリ
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" 対となるキーワードを拡張
+runtime macros/matchit.vim
+
 " global
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
