@@ -32,6 +32,9 @@ set ignorecase
 set smartcase
 set hlsearch
 
+" 画面再描画時に検索ハイライトを消す
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 " ヘルプ
 set helplang=ja
 
