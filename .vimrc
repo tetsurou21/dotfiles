@@ -31,6 +31,7 @@ set softtabstop=2
 set ignorecase
 set smartcase
 set hlsearch
+set incsearch
 
 " 画面再描画時に検索ハイライトを消す
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
