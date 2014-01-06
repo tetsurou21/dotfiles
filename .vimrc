@@ -10,6 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-entire'
+NeoBundle 'rking/ag.vim'
 
 set iskeyword+=:
 
