@@ -11,6 +11,7 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-entire'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'tpope/vim-surround'
 
 set iskeyword+=:
 
@@ -64,3 +65,6 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " 対となるキーワードを拡張
 runtime macros/matchit.vim
 
+" 文字コード
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,euc-jp
