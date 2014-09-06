@@ -19,6 +19,10 @@ export PATH="$HOME/.cabal/bin:$PATH"
 # plenv
 eval "$(plenv init -)"
 
+# # phpenv
+# export PATH="$HOME/.phpenv/bin:$PATH"
+# eval "$(phpenv init -)"
+
 # completion 
 if [ -e "$HOME/.bash_completion.d" ]; then
   . "$HOME"/.bash_completion.d/*.bash

@@ -12,6 +12,9 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-entire'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'toyamarinyon/vim-swift'
+" NeoBundle 'Keithbsmiley/swift.vim'
 
 set iskeyword+=:
 
@@ -68,3 +71,13 @@ runtime macros/matchit.vim
 " 文字コード
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,euc-jp
+
+" golang
+let g:gofmt_command = 'goimports'
+
+set rtp^=${GOROOT}/misc/vim
+set rtp^=${GOPATH}/src/github.com/nsf/gocode/vim
+
+au BufWritePre *.go Fmt
+au BufNewFile,BufRead *.go set sw=4 expandtab ts=4 filetype=go
+au FileType go compiler go

@@ -44,12 +44,6 @@ alias pmver="perl -le '\$m = shift; eval qq(require \$m) or die qq(module \"\$m\
 ### software
 ###
 
-# go
-export GOROOT=$HOME/go
-export GOOS=darwin
-export GOARCH=amd64
-export GOBIN=$HOME/bin
-
 # phpbrew
 if [ -f "$HOME/.phpbrew/bashrc" ]; then
   source "$HOME/.phpbrew/bashrc"
@@ -61,3 +55,8 @@ case "$TERM" in
     PS1='\[\033k\033\\\]'$PS1
     ;;
 esac
+
+# golang
+export GOPATH="$HOME/.go"
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
