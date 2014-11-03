@@ -81,3 +81,12 @@ set rtp^=${GOPATH}/src/github.com/nsf/gocode/vim
 au BufWritePre *.go Fmt
 au BufNewFile,BufRead *.go set sw=4 expandtab ts=4 filetype=go
 au FileType go compiler go
+
+" php
+let php_sql_query = 1
+let php_baselib = 1
+let php_htmlInStrings = 1
+let php_noShortTags = 1
+let php_parent_error_close = 1
+
+au BufNewFile,BufRead *.php set sw=4 expandtab ts=4 sts=4 filetype=php
