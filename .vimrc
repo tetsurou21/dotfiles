@@ -90,3 +90,4 @@ let php_noShortTags = 1
 let php_parent_error_close = 1
 
 au BufNewFile,BufRead *.php set sw=4 expandtab ts=4 sts=4 filetype=php
+au BufNewFile,BufRead Gemfile set filetype=ruby
