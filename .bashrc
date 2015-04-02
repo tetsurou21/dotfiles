@@ -60,3 +60,6 @@ esac
 export GOPATH="$HOME/.go"
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# git
+source /usr/local/etc/bash_completion.d/git-completion.bash
