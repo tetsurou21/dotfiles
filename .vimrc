@@ -16,6 +16,13 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'toyamarinyon/vim-swift'
 " NeoBundle 'Keithbsmiley/swift.vim'
 
+" markdown
+NeoBundle 'plasticboy/vim-markdown'
+
+" preview with browser
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+
 set iskeyword+=:
 
 set number
@@ -91,3 +98,6 @@ let php_parent_error_close = 1
 
 au BufNewFile,BufRead *.php set sw=4 expandtab ts=4 sts=4 filetype=php
 au BufNewFile,BufRead Gemfile set filetype=ruby
+
+" markdown
+au BufRead,BufNewFile *.md set filetype=markdown
