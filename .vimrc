@@ -23,6 +23,9 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 
+" pdf
+NeoBundle 'itchyny/vim-pdf'
+
 set iskeyword+=:
 
 set number
