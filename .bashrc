@@ -20,7 +20,7 @@ export MANPATH
 export CLICOLOR=1
 export LSCOLORS=gxdxxcxdcxegedabagacad
 
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home`
 
 ##################################################
 ### aliases
