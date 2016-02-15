@@ -52,7 +52,12 @@ fi
 # screen
 case "$TERM" in
   screen)
-    PS1='\[\033k\033\\\]'$PS1
+    # visible format is '[user@host:dir]$ '
+    # screen title is user:dir or executing command
+    # <ESC>k<ESC>\ means search command and set it to title
+    # <ESC>\u:\W<ESC>\ means set user:dir to title
+    # \[ ... \] means enclosed characters are not printed to screen logs
+    PS1='[\u@\h:\W]\['$'\33'k$'\33''\\'$'\33'k'\u:\W'$'\33''\\\]\$ '
     ;;
 esac
 

@@ -3,7 +3,7 @@ bell_msg "^G"
 defscrollback 10000
 startup_message off
 vbell off
-# caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} [%l] %{=b wb}%y/%m/%d %{=b wm}%c"
+caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} %{=b wb}%Y/%m/%d %{=b wm}%c"
 escape ^Jj
 bind n screen
 bind h prev
