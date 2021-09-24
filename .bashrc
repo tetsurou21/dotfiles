@@ -20,8 +20,6 @@ export MANPATH
 export CLICOLOR=1
 export LSCOLORS=gxdxxcxdcxegedabagacad
 
-export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home`
-
 ##################################################
 ### aliases
 ###
@@ -60,11 +58,3 @@ case "$TERM" in
     PS1='[\u@\h:\W]\['$'\33'k$'\33''\\'$'\33'k'\u:\W'$'\33''\\\]\$ '
     ;;
 esac
-
-# golang
-export GOPATH="$HOME/.go"
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
-# git
-source /usr/local/etc/bash_completion.d/git-completion.bash

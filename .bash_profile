@@ -16,18 +16,26 @@ fi
 # cabal
 export PATH="$HOME/.cabal/bin:$PATH"
 
-# plenv
-eval "$(plenv init -)"
-
-# # phpenv
-# export PATH="$HOME/.phpenv/bin:$PATH"
-# eval "$(phpenv init -)"
-
 # completion 
 if [ -e "$HOME/.bash_completion.d" ]; then
   . "$HOME"/.bash_completion.d/*.bash
 fi
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # .bashrc
 [ -r ~/.bashrc ] && . ~/.bashrc
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/local/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/local/google-cloud-sdk/path.bash.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/local/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/local/google-cloud-sdk/completion.bash.inc"; fi
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
