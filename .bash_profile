@@ -22,12 +22,10 @@ if [ -e "$HOME/.bash_completion.d" ]; then
 fi
 
 # rust
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # .bashrc
 [ -r ~/.bashrc ] && . ~/.bashrc
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -39,3 +37,12 @@ if [ -f "$HOME/local/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/loca
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# anyenv
+eval "$(anyenv init -)"
+
+# Setting PATH for Python 3.11
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
+export PATH
+. "$HOME/.cargo/env"

@@ -11,3 +11,4 @@ bind j next
 bind l windowlist
 shelltitle "$ |bash"
 altscreen on
+wrap on

@@ -58,3 +58,15 @@ case "$TERM" in
     PS1='[\u@\h:\W]\['$'\33'k$'\33''\\'$'\33'k'\u:\W'$'\33''\\\]\$ '
     ;;
 esac
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# deno
+export DENO_INSTALL="/Users/nishimura/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# pyenv
+eval "$(pyenv init -)"
+. "$HOME/.cargo/env"
